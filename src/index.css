@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+  
+  --color-brand-green: #3f6b52;
+  --color-brand-emerald: #4d7c60;
+  --color-brand-forest: #2b4c39;
+  --color-brand-greygreen: #597d68;
+  --color-brand-lightgreen: #eef5f1;
+  --color-brand-mint: #dcece2;
+  --color-brand-slate: #1f2f26;
+  --color-brand-muted: #5e7065;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #fbfcfa;
+    color: #17241d;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* White and Grey-Green Corporate Luxury Styling */
+.glow-green {
+  box-shadow: 0 10px 30px -10px rgba(63, 107, 82, 0.16);
+}
+
+.glow-greygreen {
+  box-shadow: 0 10px 30px -10px rgba(89, 125, 104, 0.2);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #121c16 0%, #25392d 50%, #3e5948 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-green-gradient {
+  background: linear-gradient(135deg, #2b4c39 0%, #3f6b52 50%, #597d68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-glass-white {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.border-subtle {
+  border-color: rgba(31, 47, 38, 0.08);
+}
